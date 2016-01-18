@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv"
+        >
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/habilidad_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/messenger_button_white_bg_round"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/habilidad_name"
+                android:layout_toRightOf="@+id/habilidad_image"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:text="Fusión"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/habilidad_bio"
+                android:textSize="12sp"
+                android:layout_below="@+id/habilidad_image"
+                android:textColor="#000000"
+                android:text="En inglés: Meld. Templar Assassin se oculta, haciéndose invisible siempre y cuando permanezca inmóvil. Si la invisibilidad de Fusión se interrumpe atacando a un enemigo, Lanaya le infligirá daño adicional y reducirá su armadura durante 10 segundos."
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/habilidad_bio"
+                android:id="@+id/habilidad_desc"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/habilidad_objetivo_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="HABILIDAD:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/habilidad_objetivo"
+                            android:layout_toRightOf="@+id/habilidad_objetivo_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="SIN OBJETIVO"
+                            android:layout_marginRight="5dp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/habilidad_dano_label"
+                            android:layout_toRightOf="@+id/habilidad_objetivo"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="DAÑO ADICIONAL:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/habilidad_dano"
+                            android:layout_toRightOf="@+id/habilidad_dano_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="50 / 100 / 150 / 200"
+                            />
+
+                    </TableRow>
+
+
+
+
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/text1_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="TIPO DE DAÑO:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_toRightOf="@+id/text1_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="FÍSICO"
+                            android:layout_marginRight="5dp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text2_label"
+                            android:layout_toRightOf="@+id/text1_label"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="RADIO:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_toRightOf="@+id/text2_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="275"
+                            />
+
+                    </TableRow>
+
+
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:gravity="left">
+
+                        <TextView
+                            android:id="@+id/text3_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="ATRAVIESA INMUNIDAD A HECHIZOS:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_toRightOf="@+id/text3_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="SI"
+                            android:layout_marginRight="5dp"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/text4_label"
+                            android:layout_toRightOf="@+id/text4_label"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="POSIBILIDAD DE CONTRAATAQUE:"
+                            android:layout_marginRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_toRightOf="@+id/text4_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:text="20%"
+                            />
+
+                    </TableRow>
+
+
+
+
+                </TableLayout>
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_below="@+id/habilidad_desc"
+                android:id="@+id/btnYoutube"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/android_darkred"
+                android:layout_height="wrap_content"
+                android:text="Ver Video"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

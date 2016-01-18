@@ -7,6 +7,7 @@ public class Skill {
 
 
     public int id;
+    public String name;
     public String description;
     public String image;
     public String mana;
@@ -15,6 +16,14 @@ public class Skill {
     public String immunitySpell;
     public String damage;
     public String video;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getVideo() {return video;}
 
